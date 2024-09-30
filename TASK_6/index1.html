@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var info ={
+        first_name: "adam",
+        age: 25,
+        gender:"male"
+        }
+
+        console.log(info.first_name)
+        console.log(info.age)
+        console.log(info.gender)
+
+
+        var info ={
+        first_name: "adam",
+        age: 25,
+        gender:"male"
+        }
+        console.log(info)
+
+        console.log(`Name: ${info.first_name}`);
+         console.log(`Age: ${info.age}`);
+          console.log(`Gender: ${info.gender}`);
+
+
+
+        var info1 ={
+        first_name: "adam",
+        age: 25,
+        }
+        
+          info1.gender ="male"
+          info1["gender"] = "Female";
+
+          console.log(info1)
+
+
+
+          var info ={
+        first_name: "adam",
+        age: 25,
+        gender:"male"
+        }
+
+        console.log(info.first_name)
+        console.log(info["first_name"]); 
+
+        //////////////////////////////
+         var site = {
+                   last_name: 'Hostman',
+                      age: 5,
+                      occupation: 'cloud service provider'
+};
+
+for (var key in site) {
+console.log(key + ': ' + site[key]);
+}
+
+ console.log ( Object.keys(site))
+ console.log ( Object.values(site))
+ console.log ( Object.entries(site))
+ console.log ( Object.assign(site ,info))
+ console.log ( Object.freeze(site ))
+ // This will throw an error
+//person.age = 51;
+
+
+const person = {
+    name: "Alice",
+    age: 30
+};
+
+Object.seal(person);
+
+// محاولة إضافة خاصية جديدة
+person.gender = "Female"; // لن تنجح
+
+// تعديل خاصية موجودة
+person.age = 31; // ستنجح
+
+console.log(person); // ستظهر: { name: "Alice", age: 31 }
+
+    </script>
+</body>
+</html>

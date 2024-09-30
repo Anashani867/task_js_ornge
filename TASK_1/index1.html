@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثال على insertAdjacentHTML</title>
+</head>
+<body>
+    <div id="myDiv" style="background-color: brown;">
+        <p>هذا نص موجود داخل العنصر.</p>
+    </div>
+
+    <button id="addContentBtn">أضف محتوى جديد</button>
+
+    <script>
+        // عند الضغط على الزر، يتم إدراج المحتوى الجديد
+        document.getElementById("addContentBtn").addEventListener("click", function() {
+            const element = document.getElementById("myDiv");
+            element.insertAdjacentHTML("beforebegin", '<p>هذا نص جديد أُضيف في بداية العنصر.</p>');
+        });
+    </script>
+</body>
+</html>

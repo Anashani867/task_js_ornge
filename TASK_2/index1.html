@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function smallest(arr){
+  let small = array2[0];
+   for (let a = 1; a < arr.length; a++) {
+    if (arr[a] < small) {
+        small = arr[a]; 
+    }
+}
+return small
+        }
+
+        var array2 =[30, 45, 60 ,7];
+     console.log (smallest(array2))
+
+
+
+     function Alphabetical(name1){
+        return name1
+     }
+
+     console.log(Alphabetical("hello"))
+
+
+     function factorialize(num) {
+  if (num < 0) 
+        return -1;
+
+  else if (num == 0) 
+      return 1;
+
+    else {
+        return (num * factorialize(num - 1))
+    }
+}
+console.log(factorialize(8))
+
+
+function oddeven(Number2){
+  
+     if (Number2==0) {
+        console.log("nathing")
+        
+    }
+    else if(Number2%2==0){
+        console.log("even")
+
+    }
+    else{
+        console.log("odd")
+    }
+}
+oddeven(0)
+
+
+function eveNum(Number2){
+   for(i=0;i<Number2.length;i++)
+   { 
+    if (Number2[i]%2==0) {
+        console.log(Number2[i])
+        
+    }
+}
+   
+
+}
+
+eveNum([1, 2, 3, 4, 5, 6,7,8,9])
+
+/////////////////////////////
+
+function numbersOnly(arr){
+    return arr.filter(element => typeof element !== 'string');
+
+
+}
+
+numbersOnly(['Ayham', 3, 7, 'Alaa', 13, 'coding']); 
+
+
+
+function addUp(arr){
+
+    if (arr == 0) 
+{
+        return 0;
+}
+
+
+    else {
+        return (arr + addUp(arr - 1))
+    }
+}
+
+
+
+console.log(addUp(8)); 
+
+
+
+
+function analyzeArray(arr) {
+    if (arr.length === 0) {
+        return [];
+    }
+
+    const lowest = Math.min(...arr);
+    const highest = Math.max(...arr);
+
+    const length = arr.length;
+
+    const average = arr.reduce((acc, val) => acc + val, 0) / length;
+
+    const results = [lowest, highest, length, average];
+
+    return results;
+}
+
+const myArray = [7, 13, 3, 77, 100];
+const analysis = analyzeArray(myArray);
+console.log(analysis);  
+
+
+
+function convertToRoman(num) {
+    // Define the Roman numeral mappings
+    const romanNumerals = [
+        { value: 1000, numeral: 'M' },
+        { value: 900, numeral: 'CM' },
+        { value: 500, numeral: 'D' },
+        { value: 400, numeral: 'CD' },
+        { value: 100, numeral: 'C' },
+        { value: 90, numeral: 'XC' },
+        { value: 50, numeral: 'L' },
+        { value: 40, numeral: 'XL' },
+        { value: 10, numeral: 'X' },
+        { value: 9, numeral: 'IX' },
+        { value: 5, numeral: 'V' },
+        { value: 4, numeral: 'IV' },
+        { value: 1, numeral: 'I' }
+    ];
+
+    let result = '';
+
+    for (const { value, numeral } of romanNumerals) {
+        while (num >= value) {
+            result += numeral; 
+            num -= value;      
+        }
+    }
+
+    return result; 
+}
+
+const number = 1987;
+const romanNumeral = convertToRoman(number);
+console.log(romanNumeral);  
+
+
+
+
+
+    </script>
+</body>
+</html>

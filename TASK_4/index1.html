@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+var lest = [1, 2, 3, 4, 5];
+
+lest.forEach(my);
+
+function my(a) {
+  console.log(a);
+};
+
+
+
+
+
+
+const numbers = [1,2,3,4,5];
+const newArr = numbers.map(Math.pow);
+console.log(newArr);
+
+
+const array2 =[1,2,3,4,5]
+console.log(array2.filter(function(element){
+    if(element % 2 ==0){
+        return element
+    }
+
+}))
+
+let sum =[1, 2, 3, 4, 5]
+console.log(sum.reduce(function(a,b){
+return a+b;
+}))
+
+// Create an Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// Sort the Array
+console.log(fruits.sort())
+////////////////////////////
+
+// Create an Array
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+
+// Sort the Array
+console.log(fruits1.reverse())
+
+let array3 =[1,2,3]  ;
+let array4 =[4,5,6];
+console.log(array3.concat(array4))
+
+
+let array5 =[1, 2, 3, 4, 5,6]
+console.log(array5.slice(0, 2), array5.slice(-3, -1));
+
+let array6 = [1,2,3,4,5]
+let a= array6.splice( 1,1)
+console.log(a)
+
+let array7 = [1,2,3,4,5]
+let s= array7.indexOf(5);
+console.log(s)
+
+let array8 = [1,2,3,4,5]
+let d= array8.join("and");
+console.log(d)
+
+let array9 = [1,2,3,4,5]
+let str = array9.join(",");
+let f= str.split(",");
+let lastElement = f[f.length - 1];
+console.log(lastElement)
+
+////////////////////////////
+
+var array10 = [1 ,2 ,3 ,4 ,5];
+ 
+console.log(array10.length)
+ 
+var array11 = [1, 2, 3, 4, 5]
+
+for(let nam of array11)
+{
+  console.log(nam)
+}
+
+var array12 = [1, 2, 3, 4, 5]
+for (let index in array12) {
+    console.log(index); // يطبع الفهارس: 0, 1, 2
+}
+
+
+var array13 = [1, 2, 3, 4, 5]
+
+console.log(Array.isArray(array13));
+
+
+
+var array14 = {0:"a" , 1:"b" , 2:"c" , length:3}
+console.log(Array.from(array14))
+
+console.log(Array.of(1,2,3));
+
+
+var array15 = [1, 2, 3, 4, 5]
+
+console.log(array15.fill(0 ,0,3))
+
+
+var array16 = [1, 2, 3, 4, 5]
+
+console.log(array15.copyWithin(2,0 ,1))
+
+const fruits12 = ["Banana", "Orange", "Apple", "Mango"];
+fruits12.copyWithin(2, 0);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html
